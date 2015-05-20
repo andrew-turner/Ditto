@@ -1,0 +1,32 @@
+###signpost###
+lock();
+dialog("Route 3", 1);
+unlock();
+
+###randomsign###
+lock();
+dialog("Random sign :)", 1);
+unlock();
+
+###thankyou###
+lock();
+dialog("Thank you for your support! :)", 1);
+unlock();
+
+###cave###
+lock();
+dialog("It's a cave...$$Spooky...");
+dialog("I'm not going in there!", 1);
+unlock();
+
+###wondering###
+lock();
+facePlayer();
+dialog("What am I doing here?");
+dialog("I'm trying to work out why those stairs don't go$$anywhere!", 1);
+unlock();
+
+###nowhere###
+lock();
+dialog("There's nothing down there...", 1);
+unlock();

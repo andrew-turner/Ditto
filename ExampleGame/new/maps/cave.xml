@@ -1,0 +1,5 @@
+<map name="Test cave" id="cave" file="maps\cave.tmx" tileset="tilesets\cave.xml" music="sounds\Verdanturf.mid" weather="dark">
+	<border nw="9" ne="9" sw="9" se="9"/>
+
+	<warp position="8,9" targetmap="maps\route.xml" targetposition="18,3"/>
+</map>

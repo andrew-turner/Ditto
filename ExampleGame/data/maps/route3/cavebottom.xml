@@ -1,0 +1,1 @@
+<map file="maps\route3\cavebottom.tmx" id="route3-cave-bottom" music="sounds\Fortree.mid" tileset="cave"><scriptfile source="maps\route3\scripts.txt" /><border ne="9" nw="9" se="9" sw="9" /><warp position="18,56" targetmap="route3" targetposition="42,7" /><warp position="20,3" targetmap="route3" targetposition="35,15" /></map>

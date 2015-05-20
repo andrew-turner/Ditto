@@ -1,0 +1,2 @@
+<map file="maps\route1\cave.tmx" id="route1-cave" music="sounds\Verdanturf.mid" name="Test Cave" tileset="icecave"><weather type="dark" /><scriptfile source="maps\route1\scripts.txt" /><border ne="9" nw="9" se="9" sw="9" /><warp position="8,9" targetmap="route1" targetposition="18,3" />
+</map>

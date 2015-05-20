@@ -1,0 +1,59 @@
+<resources>
+	<maps>
+		<map id="town1" file="maps\town1\town1.xml"/>
+		<map id="town1-pokecentre" file="maps\town1\pokecentre.xml"/>
+		<map id="town1-house1" file="maps\town1\house1.xml"/>
+
+		<map id="town2" file="maps\town2\town2.xml"/>
+
+		<map id="route1" file="maps\route1\route1.xml"/>
+		<map id="route1-cave" file="maps\route1\cave.xml"/>
+
+		<map id="route2" file="maps\route2\route2.xml"/>
+
+		<map id="route3" file="maps\route3\route3.xml"/>
+		<map id="route3-house1" file="maps\route3\house1.xml"/>
+		<map id="route3-house2" file="maps\route3\house2.xml"/>
+		<map id="route3-cave-bottom" file="maps\route3\cavebottom.xml"/>
+
+		<map id="grassyfields" file="maps\grassyfields\grassy_fields.xml"/>
+	</maps>
+
+	<tilesets>
+		<tileset id="outdoor" file="tilesets\env\outdoor.xml"/>
+		<tileset id="indoor" file="tilesets\env\indoor.xml"/>
+		<tileset id="pokecentre" file="tilesets\env\pokecentre.xml"/>
+		<tileset id="cave" file="tilesets\env\cave.xml"/>
+		<tileset id="icecave" file="tilesets\env\icecave.xml"/>
+
+		<tileset id="player_male" file="tilesets\sprites\player_male.xml"/>
+		<tileset id="player_male_run" file="tilesets\sprites\player_male_run.xml"/>
+		<tileset id="player_male_surf" file="tilesets\sprites\player_male_surf.xml"/>
+		<tileset id="player_female" file="tilesets\sprites\player_female.xml"/>
+		<tileset id="player_female_run" file="tilesets\sprites\player_female_run.xml"/>
+		<tileset id="player_female_surf" file="tilesets\sprites\player_female_surf.xml"/>
+
+		<tileset id="boy" file="tilesets\sprites\boy.xml"/>
+		<tileset id="girl" file="tilesets\sprites\girl.xml"/>
+		<tileset id="hiker" file="tilesets\sprites\hiker.xml"/>
+		<tileset id="karate" file="tilesets\sprites\karate.xml"/>
+		<tileset id="mailman" file="tilesets\sprites\mailman.xml"/>
+		<tileset id="nurse" file="tilesets\sprites\nurse.xml"/>
+		<tileset id="sailor" file="tilesets\sprites\sailor.xml"/>
+		<tileset id="scientist" file="tilesets\sprites\scientist.xml"/>
+		<tileset id="thug" file="tilesets\sprites\thug.xml"/>
+		<tileset id="woman1" file="tilesets\sprites\woman1.xml"/>
+		<tileset id="woman2" file="tilesets\sprites\woman2.xml"/>
+		<tileset id="woman3" file="tilesets\sprites\woman3.xml"/>
+		<tileset id="woman4" file="tilesets\sprites\woman4.xml"/>
+
+		<tileset id="tree" file="tilesets\objects\tree.xml"/>
+		<tileset id="rock" file="tilesets\objects\rock.xml"/>
+		<tileset id="boulder" file="tilesets\objects\boulder.xml"/>
+
+		<tileset id="pokeballs" file="tilesets\misc\pokeballs.xml"/>
+		<tileset id="types" file="tilesets\misc\types_status.xml"/>
+		<tileset id="bag_symbols" file="tilesets\misc\bag_symbols.xml"/>
+		<tileset id="bags" file="tilesets\misc\bags.xml"/>
+	</tilesets>
+</resources>

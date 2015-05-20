@@ -1,0 +1,16 @@
+<input font="fonts\font1.xml" back="graphics\textinput\back.bmp" transparency="255,0,255">
+
+	<anim id="player" file="graphics\textinput\{0}_anim.bmp" option="gender" transparency="255,0,255"/>
+
+	<textview back="graphics\textinput\text_view.bmp">
+		<cursor file="graphics\textinput\arrow.bmp"/>
+		<underscore file="graphics\textinput\underscore.bmp"/>
+	</textview>
+
+	<keyboard cursor1="graphics\textinput\normal_cursor.bmp" cursor2="graphics\textinput\special_cursor.bmp">
+		<upper back="graphics\textinput\name_upper.bmp"/>
+		<lower back="graphics\textinput\name_lower.bmp"/>
+		<other back="graphics\textinput\name_other.bmp"/>
+	</keyboard>
+
+</input>

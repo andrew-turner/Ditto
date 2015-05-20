@@ -1,0 +1,151 @@
+###onload###
+CALLER.sprite5.visible = 0;
+spokentorunner = 0;
+
+###signpost###
+lock();
+dialog("Town 1", 1);
+unlock();
+
+###nicehere###
+lock();
+facePlayer();
+dialog("It's nice here, don't you think?$$I do!", 1);
+unlock();
+
+###colours###
+lock();
+facePlayer();
+dialog("Now we can use [b]coloured[/b] text.$$[r]Yippee![/r]", 1);
+unlock();
+
+###donotenter###
+lock();
+dialog("Do not enter!", 1);
+unlock();
+
+###runner###
+lock();
+facePlayer();
+if spokentorunner{
+	dialog("Phew! This is hard work!", 1);
+}
+else{
+	dialog("The more I run, the easier it gets!", 1);
+	spokentorunner = 1;
+}endif
+unlock();
+
+###memory###
+lock();
+facePlayer();
+if SAVE.memoryTest{
+	dialog("I remember you!", 1);
+}
+else{
+	dialog("We haven't met before, have we?", 1);
+	SAVE.memoryTest = 1;
+}endif
+unlock();
+
+###goaway###
+lock();
+waitFor(PLAYER);
+MAP.sprite5.visible = 1;
+MAP.sprite5.move("d");
+PLAYER.move("d");
+dialog("Hey! Get away from my house!", 1);
+MAP.sprite5.move("u");
+waitFor(MAP.sprite5);
+MAP.sprite5.visible = 0;
+unlock();
+
+###givepokemon###
+lock();
+facePlayer();
+choiceDialog("Would you like a free pokemon?", "Abra", "Eevee", "Staraptor", "Pikachu", "No thanks");
+if LASTRESULT == "No thanks"{
+	dialog("Oh.$$OK then...", 1);
+}
+else{	
+	if LASTRESULT == "Abra"{
+		p = generatePokemon("ABRA", 10);
+	}endif
+	if LASTRESULT == "Eevee"{
+		p = generatePokemon("EEVEE", 25);
+	}endif
+	if LASTRESULT == "Staraptor"{
+		p = generatePokemon("STARAPTOR", 100);
+	}endif
+	if LASTRESULT == "Pikachu"{
+		p = generatePokemon("PIKACHU", 50);
+	}endif
+	PARTY.add(p);
+	dialog("Here you go!$$Enjoy...", 1);
+}endif
+unlock();
+
+###giveitems###
+lock();
+facePlayer();
+choiceDialog("Would you like a free item?", "Potion", "Hyper Potion", "Full Heal", "Super Potion", "Ether", "Bicycle", "Super Repel", "Town Map", "Nothing");
+if LASTRESULT == "Nothing"{
+	dialog("Oh.$$OK then...", 1);
+}
+else{
+	if LASTRESULT == "Potion"{
+		item = generateItem("POTION");
+	}endif
+	if LASTRESULT == "Hyper Potion"{
+		item = generateItem("HYPERPOTION");
+	}endif
+	if LASTRESULT == "Full Heal"{
+		item = generateItem("FULLHEAL");
+	}endif
+	if LASTRESULT == "Super Potion"{
+		item = generateItem("SUPERPOTION");
+	}endif
+	if LASTRESULT == "Ether"{
+		item = generateItem("ETHER");
+	}endif
+	if LASTRESULT == "Super Repel"{
+		item = generateItem("SUPERREPEL");
+	}endif
+	if LASTRESULT == "Bicycle"{
+		item = generateItem("BICYCLE");
+	}endif
+	if LASTRESULT == "Town Map"{
+		item = generateItem("TOWNMAP");
+	}endif
+	BAG.add(item, 1);
+	dialog("Here you go!$$Enjoy...", 1);
+}endif
+unlock();
+
+###myhouse###
+lock();
+facePlayer();
+dialog("Welcome to my house.", 1);
+unlock();
+
+###outoforder###
+lock();
+dialog("Out of order.", 1);
+PLAYER.move("r");
+unlock();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

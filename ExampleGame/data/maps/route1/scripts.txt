@@ -1,0 +1,11 @@
+###signpost###
+lock();
+dialog("Route 1", 1);
+unlock();
+
+###hello###
+lock();
+facePlayer();
+msg = "Hello " + SAVE.playerName + ".";
+dialog(msg, 1);
+unlock();

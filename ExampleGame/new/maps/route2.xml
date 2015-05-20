@@ -1,0 +1,11 @@
+<map name="Route 2" id="route2" file="maps\route2.tmx" tileset="tilesets\outdoor.xml" music="sounds\Verdanturf.mid">
+	<border nw="39" ne="40" sw="56" se="57"/>
+	
+	<connection map="maps\main.xml" side="left" offset="-6"/>
+	<connection map="maps\grassy_fields.xml" side="up" offset="6"/>
+	<connection map="maps\town2.xml" side="right" offset="0"/>
+	
+	<warp position="10,6" targetmap="maps\route2_house1.xml" targetposition="4,9"/>
+	<warp position="27,26" targetmap="maps\route2_house2.xml" targetposition="3,9"/>
+	<warp position="10,4" targetmap="maps\route2_house1.xml" targetposition="4,1"/>
+</map>

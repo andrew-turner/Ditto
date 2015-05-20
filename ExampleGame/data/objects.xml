@@ -1,0 +1,13 @@
+<objects>
+	<removable type="tree" tileset="tree">
+		<script source="generalscripts.txt" id="cut"/>
+	</removable>
+
+	<removable type="rock" tileset="rock">
+		<script source="generalscripts.txt" id="rocksmash"/>
+	</removable>
+
+	<pushable type="boulder" tileset="boulder">
+		<script source="generalscripts.txt" id="strength"/>
+	</pushable>
+</objects>

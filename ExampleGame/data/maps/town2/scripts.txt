@@ -1,0 +1,9 @@
+###signpost###
+lock();
+dialog("Town 2", 1);
+unlock();
+
+###locked###
+lock();
+dialog("It's locked.", 1);
+unlock();

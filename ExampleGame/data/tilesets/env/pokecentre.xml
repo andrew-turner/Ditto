@@ -1,0 +1,12 @@
+<tileset id="pokecentre" file="tilesets\env\pokecentre.bmp" tilesize="16,16" transparency="255,0,255">
+	<animation trigger="walkonto" tile="91" frames="91,91,91,93,93,93,95,95,95"/>
+	<animation trigger="walkonto" tile="106" frames="106,106,106,108,108,108,110,110,110"/>
+	<animation trigger="walkonto" tile="107" frames="107,107,107,109,109,109,111,111,111"/>
+	<animation trigger="script" name="1" tile="5" frames="5,5,5,5,11,11,11,11,28,28,28,28,84,84,84,84"/>
+	<animation trigger="script" name="2" tile="6" frames="6,6,6,6,12,12,12,12,29,29,29,29,85,85,85,85"/>
+	<animation trigger="script" name="3" tile="22" frames="22,22,22,22,13,13,13,13,57,57,57,57,86,86,86,86"/>
+	<animation trigger="script" name="4" tile="23" frames="23,23,23,23,14,14,14,14,58,58,58,58,87,87,87,87"/>
+</tileset>
+
+
+

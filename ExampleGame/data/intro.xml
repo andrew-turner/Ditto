@@ -1,0 +1,10 @@
+<intro>
+	<screen time="-1" bgcolor="255,255,0">
+		<image file="graphics\ditto.bmp" transparency="0,255,0" location="0,0"/>
+	</screen>
+
+	<screen time="-1" bgcolor="0,255,255">
+		<music file="sounds\start.mid"/>
+		<image file="graphics\title.bmp" transparency="255,255,255" location="0,0"/>
+	</screen>
+</intro>

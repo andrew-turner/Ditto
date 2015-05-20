@@ -1,0 +1,14 @@
+<summary font="fonts\font1.xml" back="graphics\summary\summaryback.bmp" transparency="255,0,255">
+
+	<main back="graphics\summary\summarymain.bmp">
+		<shiny file="graphics\summary\shiny.bmp" transparency="0,255,0"/>
+		<pokeballs tileset="pokeballs" file="items\pokeballs.xml"/>
+	</main>
+
+	<info back="graphics\summary\summary1.bmp" title="Pokemon Info"/>
+
+	<skills back="graphics\summary\summary2.bmp" title="Pokemon Skills"/>
+
+	<moves back="graphics\summary\summary3.bmp" title="Known Moves"/>
+
+</summary>

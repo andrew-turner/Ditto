@@ -1,0 +1,14 @@
+<pokeballs>
+	<ball id="REPEAT" index="1" catchrate="3,1"/>
+	<ball id="NEST" index="2" catchrate="var"/>
+	<ball id="POKE" index="3" catchrate="1"/>
+	<ball id="GREAT" index="4" catchrate="1.5"/>
+	<ball id="SAFARI" index="5" catchrate="1.5"/>
+	<ball id="ULTRA" index="6" catchrate="2"/>
+	<ball id="MASTER" index="7" catchrate="255"/>
+	<ball id="NET" index="8" catchrate="3,1"/>
+	<ball id="DIVE" index="9" catchrate="3.5,1"/>
+	<ball id="TIMER" index="10" catchrate="var"/>
+	<ball id="LUXURY" index="11" catchrate="1"/>
+	<ball id="PREMIER" index="12" catchrate="1"/>
+</pokeballs>

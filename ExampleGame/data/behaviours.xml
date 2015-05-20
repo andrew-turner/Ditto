@@ -1,0 +1,21 @@
+<behaviours>
+	<behaviour index="0" trigger="investigate">
+		<script source="generalscripts.txt" id="surf"/>
+	</behaviour>
+
+	<behaviour index="1" builtin="slide"/>
+
+	<behaviour index="2" builtin="ledgedown"/>
+	<behaviour index="3" builtin="ledgeleft"/>
+	<behaviour index="4" builtin="ledgeright"/>
+
+	<behaviour index="5" builtin="waterfall"/>
+	<behaviour index="5" trigger="investigate">
+		<script source="generalscripts.txt" id="waterfall"/>
+	</behaviour>
+
+	<behaviour index="8" builtin="forcedown"/>
+	<behaviour index="9" builtin="forceup"/>
+	<behaviour index="10" builtin="forceleft"/>
+	<behaviour index="11" builtin="forceright"/>
+</behaviours>

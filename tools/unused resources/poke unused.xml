@@ -1,0 +1,28 @@
+<pokemon>
+	<species id="BULBASAUR" dex="1" name="Bulbasaur">
+		<type primary="GRASS" secondary="POISON"/>
+		<basestats hp="45" attack="49" defense="49" spatk="65" spdef="65" speed="45"/>
+		<gender male="75" female="25"/>
+		<growth rate="MEDIUM"/>
+		<defeat exp="64" spatkev="1"/>
+		<catch rate="45"/>
+		<attacks>
+			<attack id="TACKLE" level="0"/>
+			<attack id="GROWL" level="3"/>
+			<attack id="LEECHSEED" level="7"/>
+		</attacks>
+		<egg group="MONSTER,GRASS" steps="5355"/>
+		<dex height="0.7" weight="6.9" color="GREEN" kind="Seed" entry="Foo"/>
+		<ability main="OVERGROW" hidden="CHLOROPHYLL"/>
+		<evolution species="IVYSAUR" method="levelup" level="16"/>
+		<graphics>
+			<battle front="pokemon\battlers\BULBASAUR_f.bmp" back="pokemon\battlers\BULBASAUR_b.bmp" transparency="255,0,255"/>
+			<icon file="pokemon\icons\BULBASAUR.bmp" size="22,19" transparency="255,0,255"/>
+		</graphics>
+	</species>
+
+	<species id="IVYSAUR" dex="2" name="Ivysaur">
+		<type primary="GRASS" secondary="POISON"/>
+		<basestats hp="60" attack="62" defense="63" spatk="80" spdef="80" speed="60"/>
+	</species>
+</pokemon>

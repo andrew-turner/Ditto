@@ -1,0 +1,23 @@
+<game>
+	<battle file="battle.xml"/>
+	<behaviours file="behaviours.xml"/>
+	<objects file="objects.xml"/>
+	<fieldeffects file="fieldeffects.xml"/>
+
+	<player>
+		<male tileset="player_male">
+			<status name="run" tileset="player_male_run"/>
+			<status name="surf" tileset="player_male_surf"/>
+		</male>
+		
+		<female tileset="player_female">
+			<status name="run" tileset="player_female_run"/>
+			<status name="surf" tileset="player_female_surf"/>
+		</female>
+	</player>
+
+	<newgame map="town1" position="5,7" level="0">
+		<script trigger="newgame" source="newgamescript.txt" id="newgame"/>
+	</newgame>
+
+</game>

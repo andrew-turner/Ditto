@@ -1,0 +1,5 @@
+<tileset file="tilesets\objects\tree.bmp" tilesize="16,16" transparency="255,0,255">
+	<animation name="cutdown" trigger="script" tile="0" frames="0,0,1,1,2,2,3,3"/>
+</tileset>
+
+

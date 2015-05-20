@@ -1,0 +1,114 @@
+###surf###
+lock();
+hasSurf = PARTY.hasMove("SURF");
+if hasSurf and (not PLAYER.isSurfing){
+	choiceDialog("The water is calm.$$Would you like to surf?", "Yes", "No");
+	if LASTRESULT == "Yes"{
+		PLAYER.surf();
+	}endif
+}endif
+unlock();
+
+###cut###
+lock();
+hasCut = PARTY.hasMove("CUT");
+if hasCut{
+	choiceDialog("This tree can be cut down.$$Would you like to use Cut?", "Yes", "No");
+	if LASTRESULT == "Yes"{
+		playSoundEffect("cut");
+		CALLER.remove("cutdown");
+	}endif
+}endif
+unlock();
+
+###rocksmash###
+lock();
+hasRockSmash = PARTY.hasMove("ROCKSMASH");
+if hasRockSmash{
+	choiceDialog("This rock can be smashed.$$Would you like to use Rock Smash?", "Yes", "No");
+	if LASTRESULT == "Yes"{
+		playSoundEffect("rocksmash");
+		CALLER.remove("smash");
+	}endif
+}endif
+unlock();
+
+###strength###
+lock();
+hasStrength = PARTY.hasMove("STRENGTH");
+if hasStrength and (not MAP.strengthActive){
+	choiceDialog("A large boulder, a pokemon could move it.$$Would you like to use Strength?", "Yes", "No");
+	if LASTRESULT == "Yes"{
+		MAP.strengthActive = 1;
+		dialog("Strength made it possible to move boulders around.", 1);
+	}endif
+}endif
+unlock();
+
+###fly###
+lock();
+hasFly = PARTY.hasMove("FLY");
+if hasFly{
+	PLAYER.fly();
+}endif
+unlock();
+
+###flash###
+lock();
+hasFlash = PARTY.hasMove("FLASH");
+if hasFlash{
+	dialog("A bright flash illuminated the area.", 1);
+	CAMERA.flash();
+}endif
+unlock();
+
+###waterfall###
+lock();
+hasWaterfall = PARTY.hasMove("WATERFALL");
+if hasWaterfall and PLAYER.isSurfing and (PLAYER.direction == "UP") {
+	choiceDialog("It's a large waterfall.$$Would you like to use WATERFALL?", "Yes", "No");
+	if LASTRESULT == "Yes"{
+		PLAYER.climbWaterfall();
+	}endif
+}endif
+unlock();
+
+###sweetscent###
+lock();
+hasSweetScent = PARTY.hasMove("SWEET SCENT");
+if hasSweetScent{
+	PLAYER.sweetscent();
+}endif
+unlock();
+
+###dig###
+lock();
+hasDig = PARTY.hasMove("DIG");
+if hasDig{
+	PLAYER.dig();
+}endif
+unlock();
+
+###teleport###
+lock();
+hasTeleport = PARTY.hartyHasMove("TELEPORT");
+if hasTeleport{
+	PLAYER.teleport();
+}endif
+unlock();
+
+###softboiled###
+lock();
+hasSoftBoiled = PARTY.hasMove("SOFTBOILED");
+if hasSoftBoiled{
+	PLAYER.softboiled();
+}endif
+unlock();
+
+###milkdrink###
+lock();
+hasMilkDrink = PARTY.hasMove("MILKDRINK");
+if hasMilkDrink{
+	PLAYER.milkdrink();
+}endif
+unlock();

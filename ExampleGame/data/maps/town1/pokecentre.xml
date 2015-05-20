@@ -1,0 +1,11 @@
+<map id="town1-pokecentre" file="maps\town1\pokecentre.tmx" tileset="pokecentre" music="sounds\Fortree.mid">
+	<border nw="45" ne="45" sw="45" se="45"/>
+
+	<scriptfile source="maps\town1\scripts.txt"/>
+	
+	<npc id="nurse_joy" tileset="nurse" position="7,3" level="0">
+		<script trigger="investigate" source="maps\scripts.txt" id="healpokemon"/>
+	</npc>
+	
+	<warp position="7,9" targetmap="town1" targetposition="5,6"/>
+</map>

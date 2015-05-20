@@ -1,0 +1,12 @@
+<map name="Side" id="side" file="maps\side.tmx" tileset="tilesets\outdoor.xml" music="sounds\Littleroot.mid" weather="sand">
+	<border nw="39" ne="40" sw="56" se="57"/>
+
+	<connection map="maps\main.xml" side="right" offset="-6"/>
+				
+	<npc id="sprite1" tileset="tilesets\woman3.xml" position="10,3" level="1">
+		<script trigger="investigate" source="maps\scripts.txt" id="look"/>
+	</npc>
+
+	<script position="4,3" trigger="investigate" source="maps\scripts.txt" id="testconnection"/>
+
+</map>

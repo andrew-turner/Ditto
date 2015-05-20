@@ -1,0 +1,15 @@
+<map name="Grassy Fields" id="grassyfields" file="maps\grassyfields\grassy_fields.tmx" tileset="outdoor" music="sounds\Verdanturf.mid">
+	<border nw="39" ne="40" sw="56" se="57"/>
+
+	<scriptfile source="maps\grassyfields\scripts.txt"/>
+	
+	<connection map="route3" side="down" offset="-6"/>
+
+	<script trigger="load" id="onload"/>
+	
+	<script position="2,14" trigger="investigate" id="signpost"/>
+	
+	<npc id="blocker" tileset="woman3" position="10,4" level="0" direction="r">
+		<script trigger="investigate" id="blocker"/>
+	</npc>
+</map>

@@ -1,0 +1,8 @@
+<map file="maps\route3\route3.tmx" id="route3" music="sounds\Verdanturf.mid" name="Route 3" tileset="outdoor"><connection map="grassyfields" offset="6" side="up" /><connection map="town2" offset="0" side="right" /><connection map="town1" offset="-6" side="left" /><scriptfile source="maps\route3\scripts.txt" /><border ne="40" nw="39" se="57" sw="56" /><warp position="27,26" targetmap="route3-house2" targetposition="3,9" />
+<script id="cave" position="30,1" trigger="investigate" />
+<warp position="10,4" targetmap="route3-house1" targetposition="4,1" />
+<script id="thankyou" position="48,36" trigger="investigate" />
+<warp position="42,7" targetmap="route3-cave-bottom" targetposition="18,56" /><warp position="10,6" targetmap="route3-house1" targetposition="4,9" />
+<script id="randomsign" position="57,6" trigger="investigate" /><script id="cave" position="53,29" trigger="investigate" />
+<script id="signpost" position="9,9" trigger="investigate" />
+</map>

@@ -1,0 +1,28 @@
+###onload###
+blockermoved = 0;
+
+###blocker###
+lock();
+facePlayer();
+if blockermoved{
+	dialog("Come on through.", 1);
+}
+else{
+	choiceDialog("Would you like to come through?", "Yes", "No");
+	if LASTRESULT == "Yes"{
+		dialog("You may pass then.", 1);
+		MAP.blocker.move("l,u");
+		waitFor(MAP.blocker);
+		MAP.blocker.look("d");
+		blockermoved = 1;
+	}
+	else{
+		dialog("Ok, don't come through!", 1);
+	}endif
+}endif
+unlock();
+
+###signpost###
+lock();
+dialog("Welcome to Grassy Fields.$$Please keep everything tidy.", 1);
+unlock();

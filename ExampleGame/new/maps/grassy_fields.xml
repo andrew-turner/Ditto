@@ -1,0 +1,11 @@
+<map name="Grassy Fields" id="grassy_fields" file="maps\grassy_fields.tmx" tileset="tilesets\outdoor.xml" music="sounds\Verdanturf.mid">
+	<border nw="39" ne="40" sw="56" se="57"/>
+	
+	<connection map="maps\route2.xml" side="down" offset="-6"/>
+	
+	<script position="2,14" trigger="investigate" source="maps\scripts.txt" id="grassy_fields_sign1"/>
+	
+	<npc id="blocker" tileset="tilesets\woman3.xml" position="10,4" level="0">
+		<script trigger="investigate" source="maps\scripts.txt" id="blocker"/>
+	</npc>
+</map>

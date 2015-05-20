@@ -1,0 +1,4 @@
+<dialog file="dialogs\dialog1.bmp" transparency="255,0,255" tilesize="22,22" xborder="10" yborder="8">
+	<cursor file="dialogs\cursor.bmp"/>
+	<sidecursor file="dialogs\sidecursor.bmp"/>
+</dialog>

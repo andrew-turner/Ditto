@@ -1,0 +1,21 @@
+<main title="Example Game" version="0.1">
+	<author name="andytu"/>
+	
+	<icon file="graphics\icon.png"/>
+
+	<tilesize size="16,16"/>
+
+	<font file="fonts\font1.xml"/>
+	<box file="dialogs\dialog1.xml"/>
+	<dialog file="dialogs\dialog1.xml"/>
+	<soundeffects file="sounds\effects\soundeffects.xml"/>
+	
+	<pokemon file="pokemon\pokemon.xml"/>
+	<moves file="pokemon\moves.xml"/>	
+	<natures file="pokemon\natures.xml"/>
+	<types file="pokemon\types.xml"/>
+	<items file="items\items.xml"/>
+
+	<resources file="resources.xml"/>
+	<menu file="interfaces\config.xml"/>
+</main>

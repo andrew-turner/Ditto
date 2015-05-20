@@ -1,0 +1,59 @@
+<map name="Test town" id="testtown" file="maps\main.tmx" tileset="tilesets\outdoor.xml" music="sounds\Verdanturf.mid">
+	<border nw="39" ne="40" sw="56" se="57"/>
+
+	<connection map="maps\side.xml" side="left" offset="6"/>
+	<connection map="maps\route.xml" side="down" offset="4"/>
+	<connection map="maps\route2.xml" side="right" offset="6"/>
+
+	<npc id="sprite1" tileset="tilesets\sailor.xml" position="13,24" level="0">
+		<movement type="wander" radius="5"/>
+		<script trigger="investigate" source="maps\scripts.txt" id="nicehere"/>
+	</npc>
+
+	<npc id="sprite2" tileset="tilesets\boy.xml" position="9,2" level="0">
+		<movement type="track" course="d,d,d,r,r,r,u,u,u,l,l,l"/>
+		<script trigger="investigate" source="maps\scripts.txt" id="runner"/>
+	</npc>
+
+	<npc id="sprite3" tileset="tilesets\thug.xml" position="21,15" level="0">
+		<script trigger="investigate" source="maps\scripts.txt" id="memory"/>
+	</npc>
+
+	<npc id="sprite4" tileset="tilesets\girl.xml" position="26,6" level="0">
+		<script trigger="investigate" source="maps\scripts.txt" id="givepokemon"/>
+	</npc>
+
+	<npc id="sprite5" tileset="tilesets\woman1.xml" position="22,6" level="0"/>
+
+	<npc id="sprite6" tileset="tilesets\woman4.xml" position="27,6" level="0">
+		<script trigger="investigate" source="maps\scripts.txt" id="giveitems"/>
+	</npc>
+
+	<trainer id="trainer1" tileset="tilesets\mailman.xml" position="1,4" level="0" distance="4">
+		<prebattle text="Hey, let's battle!"/>
+		<defeat text="Aww I lost..."/>
+		<postbattle text="Next time I'll win!"/>
+	</trainer>
+
+	<object type="tree" position="15,15"/>
+
+	<object type="rock" position="15,26"/>
+
+	<object type="boulder" position="18,18"/>
+	<object type="boulder" position="19,18"/>
+
+	<script position="12,7" trigger="investigate" source="maps\scripts.txt" id="testtown"/>
+
+	<script position="20,6" trigger="investigate" source="maps\scripts.txt" id="donotenter"/>
+
+	<script position="22,7" trigger="walkonto" source="maps\scripts.txt" id="goaway"/>
+
+	<script position="8,20" trigger="investigate" source="maps\scripts.txt" id="testhouse"/>
+	
+	<warp position="5,20" targetmap="maps\inside.xml" targetposition="3,9"/>
+
+	<warp position="5,6" targetmap="maps\pkmn_centre.xml" targetposition="7,9"/>
+	
+	<script trigger="load" source="maps\scripts.txt" id="before"/>
+
+</map>

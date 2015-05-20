@@ -1,0 +1,174 @@
+<types tileset="types">
+	<attack_type type="attack_type" id="PHYSICAL" index="1"/>
+	<attack_type type="attack_type" id="SPECIAL" index="2"/>
+	<attack_type type="attack_type" id="STATUS" index="3"/>
+
+	<status type="status" id="BURNT" index="4"/>
+	<status type="status" id="FROZEN" index="5"/>
+	<status type="status" id="POISENED" index="6"/>
+	<status type="status" id="PARALYZED" index="7"/>
+	<status type="status" id="ASLEEP" index="8"/>
+
+	<type id="BUG" index="9">
+		<double against="GRASS"/>
+		<double against="PSYCHIC"/>
+		<double against="DARK"/>
+		<half against="FIGHTING"/>
+		<half against="FLYING"/>
+		<half against="POISON"/>
+		<half against="GHOST"/>
+		<half against="STEEL"/>	
+		<half against="FIRE"/>
+	</type>
+
+	<type id="DARK" index="10">
+		<double against="GHOST"/>
+		<double against="PSYCHIC"/>
+		<half against="FIGHTING"/>
+		<half against="STEEL"/>
+		<half against="DARK"/>
+	</type>
+
+	<type id="DRAGON" index="11">
+		<double against="DRAGON"/>
+		<half against="STEEL"/>
+	</type>
+
+	<type id="ELECTRIC" index="12">
+		<double against="FLYING"/>
+		<double against="WATER"/>
+		<half against="GRASS"/>
+		<half against="ELECTRIC"/>
+		<half against="DRAGON"/>
+		<zero against="GROUND"/>
+	</type>
+
+	<type id="FIGHTING" index="13">
+		<double against="NORMAL"/>
+		<double against="ROCK"/>
+		<double against="STEEL"/>
+		<double against="ICE"/>
+		<double against="DARK"/>
+		<half against="FLYING"/>
+		<half against="POISON"/>
+		<half against="BUG"/>
+		<half against="PSYCHIC"/>
+		<zero against="GHOST"/>
+	</type>
+
+	<type id="FIRE" index="14">
+		<double against="BUG"/>
+		<double against="STEEL"/>
+		<double against="GRASS"/>
+		<double against="ICE"/>
+		<half against="ROCK"/>
+		<half against="FIRE"/>
+		<half against="WATER"/>
+		<half against="DRAGON"/>
+	</type>
+
+	<type id="FLYING" index="15">
+		<double against="FIGHTING"/>
+		<double against="BUG"/>
+		<double against="GRASS"/>
+		<half against="ROCK"/>
+		<half against="STEEL"/>
+		<half against="ELECTRIC"/>
+	</type>
+
+	<type id="GHOST" index="16">
+		<double against="GHOST"/>
+		<double against="PSYCHIC"/>
+		<half against="STEEL"/>
+		<half against="DARK"/>
+		<zero against="NORMAL"/>
+	</type>
+
+	<type id="GRASS" index="17">
+		<double against="GROUND"/>
+		<double against="ROCK"/>
+		<double against="WATER"/>
+		<half against="FLYING"/>
+		<half against="POISON"/>
+		<half against="BUG"/>
+		<half against="STEEL"/>
+		<half against="FIRE"/>
+		<half against="GRASS"/>
+		<half against="DRAGON"/>
+	</type>
+
+	<type id="GROUND" index="18">
+		<double against="POISON"/>
+		<double against="ROCK"/>
+		<double against="STEEL"/>
+		<double against="FIRE"/>
+		<double against="ELECTRIC"/>
+		<half against="BUG"/>
+		<half against="GRASS"/>
+		<zero against="FLYING"/>
+	</type>
+
+	<type id="ICE" index="19">
+		<double against="FLYING"/>
+		<double against="GROUND"/>
+		<double against="GRASS"/>
+		<double against="DRAGON"/>
+		<half against="STEEL"/>
+		<half against="FIRE"/>
+		<half against="WATER"/>	
+		<half against="ICE"/>
+	</type>
+
+	<type id="NORMAL" index="20">
+		<half against="ROCK"/>
+		<half against="STEEL"/>
+		<zero against="GHOST"/>
+	</type>
+
+	<type id="POISON" index="21">
+		<double against="GRASS"/>
+		<half against="POISON"/>
+		<half against="GROUND"/>
+		<half against="ROCK"/>
+		<half against="GHOST"/>
+		<zero against="STEEL"/>
+	</type>
+
+	<type id="PSYCHIC" index="22">
+		<double against="FIGHTING"/>
+		<double against="POISON"/>
+		<half against="STEEL"/>
+		<half against="PSYCHIC"/>
+		<zero against="DARK"/>
+	</type>
+
+	<type id="ROCK" index="23">
+		<double against="FLYING"/>
+		<double against="BUG"/>
+		<double against="FIRE"/>
+		<double against="ICE"/>
+		<half against="FIGHTING"/>
+		<half against="GROUND"/>
+		<half against="STEEL"/>
+	</type>
+
+	<type id="STEEL" index="24">
+		<double against="ROCK"/>
+		<double against="ICE"/>
+		<half against="STEEL"/>
+		<half against="FIRE"/>
+		<half against="WATER"/>
+		<half against="ELECTRIC"/>
+	</type>
+
+	<type id="WATER" index="25">
+		<double against="GROUND"/>
+		<double against="ROCK"/>
+		<double against="FIRE"/>
+		<half against="WATER"/>
+		<half against="GRASS"/>
+		<half against="DRAGON"/>
+	</type>
+
+	<type id="???" index="26"/>
+</types>

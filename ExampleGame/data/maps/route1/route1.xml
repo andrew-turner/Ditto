@@ -1,0 +1,22 @@
+<map name="Route 1" id="route1" file="maps\route1\route1.tmx" tileset="outdoor" music="sounds\Littleroot.mid">
+	<border nw="39" ne="40" sw="56" se="57"/>
+
+	<scriptfile source="maps\route1\scripts.txt"/>
+
+	<weather type="rain"/>
+
+	<connection map="town1" side="up" offset="-4"/>
+
+	<npc id="sprite1" tileset="woman2" position="10,45" level="0">
+		<movement type="wander" radius="2"/>
+		<script trigger="investigate" id="hello"/>
+	</npc>
+
+	<script position="8,3" trigger="investigate" id="signpost">
+		<lock/>
+		<dialog text="Test route" last="yes"/>
+		<unlock/>
+	</script>
+
+	<warp position="18,3" targetmap="route1-cave" targetposition="8,9"/>
+</map>

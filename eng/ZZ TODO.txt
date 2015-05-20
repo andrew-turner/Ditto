@@ -1,0 +1,5 @@
+trainers - exclamation at wrong point.
+transitions - not smooth. Fades are wrong.
+maps - display map name.
+
+OPTIMIZE!!

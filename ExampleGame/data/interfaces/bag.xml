@@ -1,0 +1,17 @@
+<bag font="fonts\font1.xml" back="graphics\bag\bag_back.bmp" transparency="255,0,255">
+
+	<bagicons tileset="bag_symbols"/>
+
+	<selectionicon tileset="graphics\bag\bag_select.xml"/>
+
+	<pockets back="graphics\bag\pocket.bmp" font="fonts\font2.xml" transparency="255,0,255" bagicon="bags">
+
+		<itembar back="graphics\bag\item_bar.bmp" backarrow="items\icons\itemBack.png"/>
+
+		<pocket name="Items" id="MEDECINE" index="0" numbers="1,2"/>
+		<pocket name="Key Items" id="KEYITEMS" index="1" numbers="8"/>
+		<pocket name="Pokeballs" id="BALLS" index="2" numbers="3"/>
+
+	</pockets>
+
+</bag>

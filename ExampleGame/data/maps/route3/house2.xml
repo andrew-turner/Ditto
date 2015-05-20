@@ -1,0 +1,2 @@
+<map file="maps\route3\house2.tmx" id="route3-house2" music="sounds\Fortree.mid" tileset="indoor"><scriptfile source="maps\route3\scripts.txt" /><border ne="9" nw="9" se="9" sw="9" /><npc id="sprite1" level="0" position="4,5" tileset="scientist"><movement radius="3" type="wander" /><script id="wondering" trigger="investigate" /></npc><script id="nowhere" position="1,2" trigger="walkonto" /><warp position="3,9" targetmap="route3" targetposition="27,26" />
+</map>

@@ -1,0 +1,5 @@
+<map name="HGSS route" id="hgssroute" file="maps\hgss_route.tmx" tileset="tilesets\hgss_outdoor.xml" music="sounds\Fortree.mid">
+	<border nw="34" ne="34" sw="34" se="34"/>
+
+	<connection side="left" map="maps\route.xml" offset="-20"/>
+</map>

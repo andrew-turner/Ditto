@@ -1,0 +1,71 @@
+<cut_scene music="sounds\newgame.mid" font="fonts\font1.xml" back="graphics\new_game\blank_back.bmp" transparency="255,0,255">
+
+	<screen>
+		<bg_image file="graphics\new_game\back.bmp" transparency="255,0,255" location="0,0"/>
+		<shadow file="graphics\new_game\shadow.bmp" transparency="255,0,255" location="76,96"/>
+		<image file="graphics\new_game\professor.bmp" transparency="255,0,255" location="90,25"/>
+
+		<dialog text="Hello, there!$$Glad to meet you!"/>
+		<dialog text="Welcome to the world of Pokemon!"/>
+		<dialog text="My name is Oak."/>
+		<dialog text="People affectionately refer to me as$$the Pokemon professor."/>
+		<dialog text="This world is inhabited far and wide by$$creatures called Pokemon."/>
+		<dialog text="For some people, Pokemon are pets.$$Others use them for battling."/>
+		<dialog text="As for myself..."/>
+		<dialog text="I study Pokemon as a profession."/>
+		<dialog text="But first, tell me a little about yourself."/>		
+		<choicedialog text="Tell me. Are you a boy?$$Or are you a girl?" option="GENDER" location="200,73">
+			<choice text="Boy" set="MALE"/>
+			<choice text="Girl" set="FEMALE"/>
+		</choicedialog>
+	</screen>
+	
+	<screen>
+		<bg_image file="graphics\new_game\back.bmp" transparency="255,0,255" location="0,0"/>
+		<shadow file="graphics\new_game\shadow.bmp" transparency="255,0,255" location="76,96"/>
+		<image file="graphics\new_game\{0}.bmp" option="GENDER" transparency="255,0,255" location="100,25"/>
+
+		<dialog text="Let's begin with your name.$$What is it?"/>
+	</screen>
+
+	<inputscreen type="input" option="PLAYERNAME" text="Your name?" anim="graphics\textinput\{GENDER}_anim.bmp"/>
+	
+	<screen>
+		<bg_image file="graphics\new_game\back.bmp" transparency="255,0,255" location="0,0"/>
+		<shadow file="graphics\new_game\shadow.bmp" transparency="255,0,255" location="76,96"/>
+		<image file="graphics\new_game\{0}.bmp" option="GENDER" transparency="255,0,255" location="100,25"/>
+
+		<dialog text="Right...$$So your name is {PLAYERNAME}."/>
+	</screen>
+	
+	<screen>
+		<bg_image file="graphics\new_game\back.bmp" transparency="255,0,255" location="0,0"/>
+		<shadow file="graphics\new_game\shadow.bmp" transparency="255,0,255" location="76,96"/>
+		<image file="graphics\new_game\rival.bmp" transparency="255,0,255" location="100,30"/>
+
+		<dialog text="This is my grandson."/>
+		<dialog text="He's been your rival since you both were$$babies."/>
+		<dialog text="...Erm, what was his name now?"/>
+	</screen>
+	
+	<inputscreen option="RIVALNAME" text="Rivals name?" anim="graphics\textinput\rival_anim.bmp"/>
+	
+	<screen>
+		<bg_image file="graphics\new_game\back.bmp" transparency="255,0,255" location="0,0"/>
+		<shadow file="graphics\new_game\shadow.bmp" transparency="255,0,255" location="76,96"/>
+		<image file="graphics\new_game\rival.bmp" transparency="255,0,255" location="100,30"/>
+
+		<dialog text="...Er, was it {RIVALNAME}?"/>
+		<dialog text="That's right! I remember now!$$His name is {RIVALNAME}!"/>
+	</screen>
+	
+	<screen>
+		<bg_image file="graphics\new_game\back.bmp" transparency="255,0,255" location="0,0"/>
+		<shadow file="graphics\new_game\shadow.bmp" transparency="255,0,255" location="76,96"/>
+		<image file="graphics\new_game\{0}.bmp" option="GENDER" transparency="255,0,255" location="100,25"/>
+
+		<dialog text="{PLAYERNAME}!"/>
+		<dialog text="Your very own Pokemon legend is about to$$unfold!"/>
+	</screen>
+
+</cut_scene>

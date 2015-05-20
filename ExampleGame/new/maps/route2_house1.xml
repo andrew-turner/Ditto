@@ -1,0 +1,6 @@
+<map name="Route 2, Grassy fields entrance" id="route2_house1" file="maps\route2_house1.tmx" tileset="tilesets\indoor.xml" music="sounds\Fortree.mid">
+	<border nw="9" ne="9" sw="9" se="9"/>
+
+	<warp position="4,9" targetmap="maps\route2.xml" targetposition="10,6"/>
+	<warp position="4,1" targetmap="maps\route2.xml" targetposition="10,4"/>
+</map>

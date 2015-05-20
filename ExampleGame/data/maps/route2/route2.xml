@@ -1,0 +1,16 @@
+<map name="Route 2" id="route2" file="maps\route2\route2.tmx" tileset="outdoor" music="sounds\Littleroot.mid">
+	<border nw="39" ne="40" sw="56" se="57"/>
+
+	<weather type="sand"/>
+
+	<connection map="town1" side="right" offset="-6"/>
+
+	<scriptfile source="maps\route2\scripts.txt"/>
+				
+	<npc id="sprite1" tileset="woman3" position="10,3" level="1">
+		<script trigger="investigate" id="look"/>
+	</npc>
+
+	<script position="10,10" trigger="investigate" id="signpost"/>
+
+</map>

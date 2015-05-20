@@ -1,0 +1,7 @@
+<townmap grid="12,12" size="24,18">
+	<location id="town1" name="Town 1" file="town1" flyPos="5,7" position="5,10"/>
+	<location id="route1" name="Route 1" position="5,11"/>
+	<location id="SIDE" name="Route 2" position="4,10"/>
+	<location id="CINNABARISLAND" name="Cinnabar Island" position="5,16"/>
+	<sublocation id="PKMNMANSION" name="Pokemon Mansion" position="5,16"/>
+</townmap>

@@ -1,0 +1,6 @@
+###newgame###
+lock();
+msg = "Good luck, " + SAVE.PLAYERNAME + "!";
+dialog(msg, 1);
+SAVE.memoryTest = 0;
+unlock();

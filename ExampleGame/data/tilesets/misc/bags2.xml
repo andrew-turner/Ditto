@@ -1,0 +1,6 @@
+<tileset file="graphics\bags.bmp" tilesize="60,66" transparency="255,0,255">
+	<bag id="ITEMS" index="0"/>
+	<bag id="KEYITEMS" index="1"/>
+	<bag id="POKEBALLS" index="2"/>
+</tileset>
+

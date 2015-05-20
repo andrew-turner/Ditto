@@ -1,0 +1,49 @@
+<fieldeffects>
+	<fieldeffect id="CUT">
+		<script source="generalscripts.txt" id="cut"/>
+	</fieldeffect>
+
+	<fieldeffect id="FLY">
+		<script source="generalscripts.txt" id="fly"/>
+	</fieldeffect>
+	
+	<fieldeffect id="SURF">
+		<script source="generalscripts.txt" id="surf"/>
+	</fieldeffect>
+
+	<fieldeffect id="STRENGTH">
+		<script source="generalscripts.txt" id="strength"/>
+	</fieldeffect>
+
+	<fieldeffect id="FLASH">
+		<script source="generalscripts.txt" id="flash"/>
+	</fieldeffect>
+	
+	<fieldeffect id="ROCKSMASH">
+		<script source="generalscripts.txt" id="rocksmash"/>
+	</fieldeffect>
+	
+	<fieldeffect id="WATERFALL">
+		<script source="generalscripts.txt" id="waterfall"/>
+	</fieldeffect>
+
+	<fieldeffect id="SWEET SCENT">
+		<script source="generalscripts.txt" id="sweetscent"/>
+	</fieldeffect>
+	
+	<fieldeffect id="DIG">
+		<script source="generalscripts.txt" id="dig"/>
+	</fieldeffect>
+	
+	<fieldeffect id="TELEPORT">
+		<script source="generalscripts.txt" id="teleport"/>
+	</fieldeffect>
+	
+	<fieldeffect id="SOFT BOILED">
+		<script source="generalscripts.txt" id="softboiled"/>
+	</fieldeffect>
+	
+	<fieldeffect id="MILK DRINK">
+		<script source="generalscripts.txt" id="milkdrink"/>
+	</fieldeffect>
+</fieldeffects>

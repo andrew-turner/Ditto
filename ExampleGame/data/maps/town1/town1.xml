@@ -1,0 +1,32 @@
+<map file="maps\town1\town1.tmx" id="town1" music="sounds\Verdanturf.mid" name="Town 1" tileset="outdoor"><script id="onload" trigger="load" /><connection map="route3" offset="6" side="right" /><scriptfile source="maps\town1\scripts.txt" /><connection map="route2" offset="6" side="left" /><connection map="route1" offset="4" side="down" /><border ne="40" nw="39" se="57" sw="56" /><npc id="sprite1" level="0" position="12,21" tileset="sailor">
+<movement course="l,r" radius="4" type="wander" />
+<script id="nicehere" trigger="investigate" />
+</npc>
+<npc id="sprite3" level="0" position="21,15" tileset="thug">
+<script id="memory" trigger="investigate" />
+</npc>
+<object position="17,20" type="boulder" />
+<warp position="5,6" targetmap="town1-pokecentre" targetposition="7,9" />
+<script id="signpost" position="12,7" trigger="investigate" />
+<object position="16,19" type="boulder" /><npc id="test" level="0" position="9,9" tileset="woman4">
+<script id="colours" trigger="investigate" />
+</npc>
+<npc id="sprite6" level="0" position="27,6" tileset="woman4">
+<script id="giveitems" trigger="investigate" />
+</npc>
+<object position="14,27" type="rock" />
+<npc id="sprite2" level="0" position="9,2" tileset="boy">
+<movement course="d,d,d,r,r,r,u,u,u,l,l,l" type="track" />
+<script id="runner" trigger="investigate" />
+</npc>
+<warp position="5,20" targetmap="town1-house1" targetposition="3,9" />
+<script id="goaway" position="22,7" trigger="walkonto" />
+<script id="donotenter" position="20,6" trigger="investigate" />
+<npc id="sprite5" level="0" position="22,6" tileset="woman1" />
+<object position="18,19" type="boulder" /><object position="18,21" type="boulder" />
+<npc id="sprite4" level="0" position="26,6" tileset="girl">
+<script id="givepokemon" trigger="investigate" />
+</npc>
+<object position="16,21" type="boulder" />
+<object position="15,15" type="tree" />
+</map>

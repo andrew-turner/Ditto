@@ -1,0 +1,5 @@
+<map name="New Town" id="town2" file="maps\town2.tmx" tileset="tilesets\outdoor.xml" music="sounds\Verdanturf.mid">
+	<border nw="240" ne="240" sw="240" se="240"/>
+	
+	<connection map="maps\route2.xml" side="left" offset="0"/>
+</map>

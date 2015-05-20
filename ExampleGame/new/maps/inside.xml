@@ -1,0 +1,12 @@
+<map name="Inside" id="inside" file="maps\inside.tmx" tileset="tilesets\indoor.xml" music="sounds\Fortree.mid">
+	<border nw="9" ne="9" sw="9" se="9"/>
+
+	<npc id="sprite1" tileset="tilesets\hiker.xml" position="3,6" level="0">
+		<movement type="wander" radius="2"/>
+		<script trigger="investigate" source="maps\scripts.txt" id="house"/>
+	</npc>
+
+	<script position="1,2" trigger="walkonto" source="maps\scripts.txt" id="outoforder"/>
+
+	<warp position="3,9" targetmap="maps\main.xml" targetposition="5,20"/>
+</map>

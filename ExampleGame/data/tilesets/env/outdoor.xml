@@ -1,0 +1,11 @@
+<tileset id="outdoor" file="tilesets\env\outdoor.bmp" tilesize="16,16" transparency="255,255,255">
+	<animation trigger="auto" tile="27" frames="27,27,27,27,28,28,28,28"/>
+	<animation trigger="auto" tile="470" frames="470,470,470,471,471,471,472,472,472,473,473,473"/>
+	<animation trigger="auto" tile="487" frames="487,487,487,488,488,488,489,489,489,490,490,490"/>
+	<animation trigger="auto" tile="504" frames="504,504,504,505,505,505,506,506,506,507,507,507"/>
+	<animation trigger="walkonto" tile="44" frames="44,45,46,45,46,45"/>
+	<animation trigger="walkonto" tile="282" frames="282,297,297,298,298,299,299"/>
+	<animation trigger="walkonto" tile="196" frames="196, 212,213,214,215"/>
+</tileset>
+
+

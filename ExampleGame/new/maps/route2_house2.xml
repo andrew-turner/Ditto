@@ -1,0 +1,5 @@
+<map name="Route 2, Caves entrance house" id="route2_house2" file="maps\route2_house2.tmx" tileset="tilesets\indoor.xml" music="sounds\Fortree.mid">
+	<border nw="9" ne="9" sw="9" se="9"/>
+
+	<warp position="3,9" targetmap="maps\route2.xml" targetposition="27,26"/>
+</map>

@@ -1,0 +1,10 @@
+<map file="maps\town1\house1.tmx" id="town1-house1" music="sounds\Fortree.mid" tileset="indoor">
+<scriptfile source="maps\town1\scripts.txt"/>
+<border ne="9" nw="9" se="9" sw="9"/>
+<script id="outoforder" position="1,2" trigger="walkonto"/>
+<warp position="3,9" targetmap="town1" targetposition="5,20"/>
+<npc id="sprite1" level="0" position="3,6" tileset="hiker">
+<movement course="l,l,r,r" radius="2" type="wander"/>
+<script id="myhouse" trigger="investigate"/>
+</npc>
+</map>

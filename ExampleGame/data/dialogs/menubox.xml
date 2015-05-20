@@ -1,0 +1,3 @@
+<box file="dialogs\menubox.bmp" transparency="255,0,255" tilesize="22,22">
+	<sidecursor file="dialogs/sidecursor.bmp"/>
+</box>

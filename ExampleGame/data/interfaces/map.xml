@@ -1,0 +1,4 @@
+<map font="fonts\font1.xml" back="graphics\map\townmap.bmp" transparency="255,0,255">
+	<icons player="graphics\map\mapplayer.bmp" selection="graphics\map\mapselection.bmp" fly="graphics\map\flyicon.bmp"/>
+	<data file="townmap.xml"/>
+</map>

@@ -1,0 +1,28 @@
+###healpokemon###
+lock();
+choiceDialog("Would you like me to heal your pokemon?", "Yes", "No");
+if LASTRESULT == "Yes"{
+	dialog("I'll take your pokemon for a moment.", 1);
+	MAP.nurse_joy.look("l");
+	PLAYER.healPokemon();
+	MAP.playAnim("1", 7, 0);
+	MAP.playAnim("2", 8, 0);
+	MAP.playAnim("3", 7, 1);
+	MAP.playAnim("4", 8, 1);
+	waitFrames(20);
+	MAP.nurse_joy.look("d");
+	dialog("We hope to see you again!", 1);
+}
+else{
+	dialog("Ok, see you again!", 1);
+}endif
+unlock();
+
+
+
+
+
+
+
+
+

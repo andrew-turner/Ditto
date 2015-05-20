@@ -1,0 +1,12 @@
+<interfaces>
+	<box file="dialogs\menubox.xml"/>
+
+	<interface name="party" file="interfaces\party.xml"/>
+	<interface name="summary" file="interfaces\summary.xml"/>
+	<interface name="bag" file="interfaces\bag.xml"/>
+	<interface name="trainercard" file="interfaces\trainercard.xml"/>
+
+	<interface name="map" file="interfaces\map.xml"/>
+
+	<interface name="textinput" file="interfaces\textinput.xml"/>
+</interfaces>

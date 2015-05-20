@@ -1,0 +1,12 @@
+﻿<sounds>
+	<soundeffect name="SAVE" file="sounds\effects\save.wav"/>
+	<soundeffect name="BUMP" file="sounds\effects\bump.wav"/>
+	<soundeffect name="SELECT" file="sounds\effects\select.wav"/>
+	<soundeffect name="CHOOSE" file="sounds\effects\select.wav"/>
+	<soundeffect name="JUMP" file="sounds\effects\jump_ledge.wav"/>
+	<soundeffect name="PUSH" file="sounds\effects\effect_tackle.wav"/>
+	<soundeffect name="MENUOPEN" file="sounds\effects\menu_open.wav"/>
+
+	<soundeffect name="cut" file="sounds\effects\effect_cut.wav"/>
+	<soundeffect name="rocksmash" file="sounds\effects\effect_rocksmash.wav"/>
+</sounds>

@@ -1,0 +1,5 @@
+<party font="fonts\font1.xml" boxfont="fonts\menufont.xml" back="graphics\party\party.bmp" hpbar="graphics\party\hpbar.bmp" item="graphics\party\item.bmp" transparency="255,0,255">
+	<main  file="graphics\party\partymain.bmp" selected="graphics\party\partymain_selected.bmp" switch="graphics\party\partymain_switch.bmp"/>
+	<side file="graphics\party\partyside.bmp" selected="graphics\party\partyside_selected.bmp" switch="graphics\party\partyside_switch.bmp"/>
+	<empty file="graphics\party\partyempty.bmp"/>
+</party>

@@ -1,0 +1,12 @@
+<battle font="fonts/font1.xml" statusfont="fonts/battlefont.xml" transparency="255,0,255" hpbar="graphics/battle/hpbar.bmp">
+	<playerpokemon file="graphics/battle/playerpokemonstatus.bmp"/>
+	<enemypokemon file="graphics/battle/enemypokemonstatus.bmp"/>
+
+	<battledialog file="dialogs/battle_dialog1.xml" font="fonts/font2.xml"/>
+	<battlemenu file="dialogs/battle_dialog2.xml" font="fonts/font1.xml"/>
+	<movemenu file="dialogs/battle_dialog2.xml" font="fonts/font1.xml"/>
+
+	<environments>
+		<environment id="FIELD" file="graphics/battle/field.bmp"/>
+	</environments>
+</battle>

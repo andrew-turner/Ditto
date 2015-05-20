@@ -1,0 +1,10 @@
+<map id="route3-house1" file="maps\route3\house1.tmx" tileset="indoor" music="sounds\Fortree.mid">
+	<note n="Grassy field entrance"/>
+
+	<border nw="9" ne="9" sw="9" se="9"/>
+
+	<scriptfile source="maps\route3\scripts.txt"/>
+
+	<warp position="4,9" targetmap="route3" targetposition="10,6"/>
+	<warp position="4,1" targetmap="route3" targetposition="10,4"/>
+</map>

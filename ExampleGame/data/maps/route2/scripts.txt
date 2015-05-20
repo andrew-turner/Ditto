@@ -1,0 +1,19 @@
+###signpost###
+lock();
+dialog("Route 2", 1);
+unlock();
+
+###look###
+lock();
+facePlayer();
+CAMERA.startDynamic(2);
+dialog("Look over there!");
+CAMERA.move("r,r,r,r");
+dialog("Wow!");
+waitFor(CAMERA);
+waitFrames(8);
+CAMERA.move("l,l,l,l");
+waitFor(CAMERA);
+CAMERA.endDynamic();
+dialog("Amazing!", 1);
+unlock();

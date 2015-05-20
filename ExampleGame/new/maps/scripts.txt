@@ -1,0 +1,212 @@
+###before###
+CALLER.sprite5.visible = 0;
+spokentorunner = 0;
+
+###nicehere###
+lock();
+facePlayer();
+dialog("It's nice [b]here, [r]don't[/r] you[/b] think?$$I do!", 1);
+unlock();
+
+###look###
+lock();
+facePlayer();
+CAMERA.startDynamic(2);
+dialog("Look over there!");
+CAMERA.move("r,r,r,r");
+dialog("Wow!");
+waitFor(CAMERA);
+waitFrames(8);
+CAMERA.move("l,l,l,l");
+waitFor(CAMERA);
+CAMERA.endDynamic();
+dialog("Amazing!", 1);
+unlock();
+
+###runner###
+lock();
+facePlayer();
+if spokentorunner{
+	dialog("Phew! This is hard work!", 1);
+}
+else{
+	dialog("The more I run, the easier it gets!", 1);
+	spokentorunner = 1;
+}endif
+unlock();
+
+###memory###
+lock();
+facePlayer();
+if SAVE.memoryTest{
+	dialog("I remember you!", 1);
+}
+else{
+	dialog("We haven't met before, have we?", 1);
+	SAVE.memoryTest = 1;
+}endif
+unlock();
+
+###test###
+print "SCRIPT START";
+lock();
+choiceDialog("OK", "ABRA", "EEVEE", "STARAPTOR");
+msg = "You chose " + LASTRESULT + "!";
+dialog(msg, 1);
+unlock();
+print "SCRIPT END";
+
+###goaway###
+lock();
+waitFor(PLAYER);
+MAP.sprite5.visible = 1;
+MAP.sprite5.move("d");
+PLAYER.move("d");
+dialog("Hey! Get away from my house!", 1);
+MAP.sprite5.move("u");
+waitFor(MAP.sprite5);
+MAP.sprite5.visible = 0;
+unlock();
+
+###givepokemon###
+lock();
+facePlayer();
+choiceDialog("Would you like a free pokemon?", "Abra", "Eevee", "Staraptor", "Pikachu", "No thanks");
+if LASTRESULT == "No thanks"{
+	dialog("Oh.$$OK then...", 1);
+}
+else{	
+	if LASTRESULT == "Abra"{
+		p = generatePokemon("ABRA", 10);
+	}endif
+	if LASTRESULT == "Eevee"{
+		p = generatePokemon("EEVEE", 25);
+	}endif
+	if LASTRESULT == "Staraptor"{
+		p = generatePokemon("STARAPTOR", 100);
+	}endif
+	if LASTRESULT == "Pikachu"{
+		p = generatePokemon("PIKACHU", 50);
+	}endif
+	PLAYER.addToParty(p);
+	dialog("Here you go!$$Enjoy...", 1);
+}endif
+unlock();
+
+###giveitems###
+lock();
+facePlayer();
+choiceDialog("Would you like a free item?", "Potion", "Hyper Potion", "Full Heal", "Super Potion", "Ether", "Bicycle", "Super Repel", "Town Map", "Nothing");
+if LASTRESULT == "Nothing"{
+	dialog("Oh.$$OK then...", 1);
+}
+else{
+	if LASTRESULT == "Potion"{
+		item = generateItem("POTION");
+	}endif
+	if LASTRESULT == "Hyper Potion"{
+		item = generateItem("HYPERPOTION");
+	}endif
+	if LASTRESULT == "Full Heal"{
+		item = generateItem("FULLHEAL");
+	}endif
+	if LASTRESULT == "Super Potion"{
+		item = generateItem("SUPERPOTION");
+	}endif
+	if LASTRESULT == "Ether"{
+		item = generateItem("ETHER");
+	}endif
+	if LASTRESULT == "Super Repel"{
+		item = generateItem("SUPERREPEL");
+	}endif
+	if LASTRESULT == "Bicycle"{
+		item = generateItem("BICYCLE");
+	}endif
+	if LASTRESULT == "Town Map"{
+		item = generateItem("TOWNMAP");
+	}endif
+	PLAYER.addToBag(item, 1);
+	dialog("Here you go!$$Enjoy...", 1);
+}endif
+unlock();
+
+###healpokemon###
+lock();
+choiceDialog("Would you like me to heal your pokemon?", "Yes", "No");
+if LASTRESULT == "Yes"{
+	dialog("I'll take your pokemon for a moment.", 1);
+	MAP.nurse_joy.look("l");
+	PLAYER.healPokemon();
+	MAP.playAnim("1", 7, 0);
+	MAP.playAnim("2", 8, 0);
+	MAP.playAnim("3", 7, 1);
+	MAP.playAnim("4", 8, 1);
+	waitFrames(20);
+	MAP.nurse_joy.look("d");
+	dialog("We hope to see you again!", 1);
+}
+else{
+	dialog("Ok, see you again!", 1);
+}endif
+unlock();
+
+###blocker###
+lock();
+facePlayer();
+choiceDialog("Would you like to go through", "Yes", "No");
+if LASTRESULT == "Yes"{
+	dialog("You may pass then",1);
+	MAP.blocker.move("l");
+	waitFor(MAP.blocker);
+	MAP.blocker.move("u");
+	waitFor(MAP.blocker);
+	MAP.blocker.look("d");
+}
+else{
+	dialog("Ok, don't come through", 1);
+}endif
+unlock();
+
+###grassy_fields_sign1###
+lock();
+dialog("Welcome to Grassy Fields.$$Please keep everything tidy.", 1);
+unlock();
+
+###hello###
+lock();
+facePlayer();
+msg = "Hello " + SAVE.playerName + ".";
+dialog(msg, 1);
+unlock();
+
+###house###
+lock();
+facePlayer();
+dialog("Welcome to my house.", 1);
+unlock();
+
+###outoforder###
+lock();
+dialog("Out of order.", 1);
+PLAYER.move("r");
+unlock();
+
+###testtown###
+lock();
+dialog("Test town", 1);
+unlock();
+
+###testhouse###
+lock();
+dialog("Test house", 1);
+unlock();
+
+###testconnection###
+lock();
+dialog("Test connection");
+unlock();
+
+###donotenter###
+lock();
+dialog("Do not enter!", 1);
+unlock();

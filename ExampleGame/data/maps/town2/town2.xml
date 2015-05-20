@@ -1,0 +1,10 @@
+<map file="maps\town2\town2.tmx" id="town2" music="sounds\Verdanturf.mid" name="Town 2" tileset="outdoor">
+<connection map="route3" offset="0" side="left"/>
+<scriptfile source="maps\town2\scripts.txt"/>
+<border ne="240" nw="240" se="240" sw="240"/>
+<script id="signpost" position="6,13" trigger="investigate"/>
+<script id="locked" position="6,6" trigger="investigate"/>
+<script id="locked" position="20,5" trigger="investigate"/>
+<script id="locked" position="11,13" trigger="investigate"/>
+<script id="locked" position="14,6" trigger="investigate"/>
+</map>

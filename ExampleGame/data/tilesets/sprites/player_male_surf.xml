@@ -1,0 +1,5 @@
+<tileset id="player_surf" file="tilesets\sprites\player_male_surf.bmp" tilesize="32,32" transparency="255,0,255">
+
+</tileset>
+
+

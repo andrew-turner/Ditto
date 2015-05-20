@@ -1,0 +1,69 @@
+<font file="fonts\menufont.bmp" transparency="255,0,255" height="8">
+	<character char="A" location="0,0" width="5" />
+	<character char="B" location="6,0" width="5" />
+	<character char="C" location="12,0" width="5" />
+	<character char="D" location="18,0" width="5" />
+	<character char="E" location="24,0" width="5" />
+	<character char="F" location="30,0" width="5" />
+	<character char="G" location="36,0" width="5" />
+	<character char="H" location="42,0" width="5" />
+	<character char="I" location="48,0" width="4" />
+	<character char="J" location="53,0" width="5" />
+	<character char="K" location="59,0" width="5" />
+	<character char="L" location="65,0" width="5" />
+	<character char="M" location="71,0" width="5" />
+	<character char="N" location="77,0" width="5" />
+	<character char="O" location="83,0" width="5" />
+	<character char="P" location="89,0" width="5" />
+	<character char="Q" location="95,0" width="5" />
+	<character char="R" location="101,0" width="5" />
+	<character char="S" location="107,0" width="5" />
+	<character char="T" location="113,0" width="4" />
+	<character char="U" location="118,0" width="5" />
+	<character char="V" location="124,0" width="5" />
+	<character char="W" location="130,0" width="5" />
+	<character char="X" location="136,0" width="5" />
+	<character char="Y" location="142,0" width="4" />
+	<character char="Z" location="147,0" width="5" />
+
+	<character char="a" location="0,0" width="5" />
+	<character char="b" location="6,0" width="5" />
+	<character char="c" location="12,0" width="5" />
+	<character char="d" location="18,0" width="5" />
+	<character char="e" location="24,0" width="5" />
+	<character char="f" location="30,0" width="5" />
+	<character char="g" location="36,0" width="5" />
+	<character char="h" location="42,0" width="5" />
+	<character char="i" location="48,0" width="4" />
+	<character char="j" location="53,0" width="5" />
+	<character char="k" location="59,0" width="5" />
+	<character char="l" location="65,0" width="5" />
+	<character char="m" location="71,0" width="5" />
+	<character char="n" location="77,0" width="5" />
+	<character char="o" location="83,0" width="5" />
+	<character char="p" location="89,0" width="5" />
+	<character char="q" location="95,0" width="5" />
+	<character char="r" location="101,0" width="5" />
+	<character char="s" location="107,0" width="5" />
+	<character char="t" location="113,0" width="4" />
+	<character char="u" location="118,0" width="5" />
+	<character char="v" location="124,0" width="5" />
+	<character char="w" location="130,0" width="5" />
+	<character char="x" location="136,0" width="5" />
+	<character char="y" location="142,0" width="4" />
+	<character char="z" location="147,0" width="5" />
+
+	<character char="0" location="0,9" width="5" />
+	<character char="1" location="6,9" width="4" />
+	<character char="2" location="11,9" width="5" />
+	<character char="3" location="17,9" width="5" />
+	<character char="4" location="23,9" width="5" />
+	<character char="5" location="29,9" width="5" />
+	<character char="6" location="35,9" width="5" />
+	<character char="7" location="41,9" width="5" />
+	<character char="8" location="47,9" width="5" />
+	<character char="9" location="53,9" width="5" />
+	<character char="/" location="59,9" width="5" />
+
+	<character char=" " location="153,0" width="3" />
+</font>

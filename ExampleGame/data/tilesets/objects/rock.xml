@@ -1,0 +1,5 @@
+<tileset file="tilesets\objects\rock.bmp" tilesize="16,16" transparency="255,0,255">
+	<animation name="smash" trigger="script" tile="0" frames="0,0,1,1,2,2,3,3"/>
+</tileset>
+
+

@@ -1,0 +1,27 @@
+<natures>
+	<nature id="HARDY" name="Hardy"/>
+	<nature id="LONELY" name="Lonely" increases="attack" decreases="defense"/>
+	<nature id="BRAVE" name="Brave" increases="attack" decreases="speed"/>
+	<nature id="ADAMANT" name="Adamant" increases="attack" decreases="spatk"/>
+	<nature id="NAUGHTY" name="Naughty" increases="attack" decreases="spdef"/>
+	<nature id="BOLD" name="Bold" increases="defense" decreases="attack"/>
+	<nature id="DOCILE" name="Docile"/>
+	<nature id="RELAXED" name="Relaxed" increases="defense" decreases="speed"/>
+	<nature id="IMPISH" name="Impish" increases="defense" decreases="spatk"/>
+	<nature id="LAX" name="Lax" increases="defense" decreases="spdef"/>
+	<nature id="TIMID" name="Timid" increases="speed" decreases="attack"/>
+	<nature id="HASTY" name="Hasty" increases="speed" decreases="defense"/>
+	<nature id="SERIOUS" name="Serious"/>
+	<nature id="JOLLY" name="Jolly" increases="speed" decreases="spatk"/>
+	<nature id="NAIVE" name="Naive" increases="speed" decreases="spdef"/>
+	<nature id="MODEST" name="Modest" increases="spatk" decreases="attack"/>
+	<nature id="MILD" name="Mild" increases="spatk" decreases="defense"/>
+	<nature id="QUIET" name="Quiet" increases="spatk" decreases="speed"/>
+	<nature id="BASHFUL" name="Bashful"/>
+	<nature id="RASH" name="Rash" increases="spatk" decreases="spdef"/>
+	<nature id="CALM" name="Calm" increases="spdef" decreases="attack"/>
+	<nature id="GENTLE" name="Gentle" increases="spdef" decreases="defense"/>
+	<nature id="SASSY" name="Sassy" increases="spdef" decreases="speed"/>
+	<nature id="CAREFUL" name="Careful" increases="spdef" decreases="spatk"/>
+	<nature id="QUIRKY" name="Quirky"/>
+</natures>
